@@ -35,7 +35,8 @@ const videoSchema = new Schema(
             default: ture
         },
         owner: {
-
+            type: Schema.Types.ObjectId,
+            ref: "User"
         }
     }, 
     {
